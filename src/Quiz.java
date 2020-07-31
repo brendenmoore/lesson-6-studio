@@ -8,7 +8,16 @@ public class Quiz {
             new MultipleChoice(
                     "What is the best food?",
                     new ArrayList(Arrays.asList("A. Cat", "B. Pizza", "C. Cheese", "D. Carrots")),
-                    new ArrayList(Arrays.asList("b")))
+                    new ArrayList(Arrays.asList("b"))),
+            new MultipleChoice(
+                    "What is the best animal?",
+                    new ArrayList(Arrays.asList("A. Cat", "B. Pizza", "C. Cheese", "D. Carrots")),
+                    new ArrayList(Arrays.asList("a"))),
+            new Checkbox(
+                    "Select all numbers",
+                    new ArrayList<String>(Arrays.asList("A. 1", "B. green beans", "C. Twelve", "D. Acorns", "E. 19.532")),
+                    new ArrayList<String>(Arrays.asList("a", "c", "e"))
+            )
     ));
 
 
@@ -42,7 +51,7 @@ public class Quiz {
         System.out.println("-----------------\n" +
                 "Here are your results!\n" +
                 "----------------------\n");
-        System.out.println("You got " + numberCorrect + "/" + questions.size() + " questions correct. Good job." );
+        System.out.println("You got " + numberCorrect + "/" + questions.size() + " questions correct. Good job.\n" );
 
         int n = 0;
         for (Question q : questions) {

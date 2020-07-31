@@ -11,7 +11,6 @@ public abstract class Question {
     private ArrayList<String> options;
     private ArrayList<String> answers;
     private String response = "";
-    private ArrayList<String> responses;
     private String instructions;
 
     // Constructor
